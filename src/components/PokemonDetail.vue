@@ -68,17 +68,9 @@
 
           <div class="detailContainer__Modal--Content__SectionButtonsFavorites">
 
-            <!-- <v-icon name="fa-star" class='pokemonContainer__List--UlLi__Favorite' @click="toggleFavorite(pokemon)" scale  ="2"/> -->
-            <!-- <v-icon name="fa-star" class='detailContainer__Modal--Content__SectionButtonsFavoritesIcon' scale  ="2"/> -->
-            <v-icon 
-    :class="{ 'detailContainer__Modal--Content__SectionButtonsFavoritesIcon': true, 'favorite': isFavorite(pokemon), 'disabled': !isFavorite(pokemon) }" 
-    name="fa-star" 
-    @click="toggleFavorite(pokemon)" 
-    scale="2"
-/>
-          </div>
-
+            <v-icon :class="{ 'detailContainer__Modal--Content__SectionButtonsFavoritesIcon': true, 'favorite': isFavorite(pokemon), 'disabled': !isFavorite(pokemon) }" name="fa-star" @click="toggleFavorite(pokemon)" scale="2"/>
           
+          </div>
 
         </div>
 
@@ -221,10 +213,6 @@ onMounted(async () => {
           .detailContainer__Modal--Content__SectionP .detailContainer__Modal--Content__SectionPTitle{
             font-size: 18px;
             line-height: 27px;
-          }
-
-          .detailContainer__Modal--Content__SectionTypes{
-
           }
 
         }
